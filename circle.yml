@@ -5,15 +5,15 @@ machine:
     version: 5.5.11 
   environment:
     # Set the site UUID here for now -> Private Environment variable
-    site_uuid: f86d7c5d-db0a-45f4-8a8a-dc0c37964bc1 
+    PUUID: f86d7c5d-db0a-45f4-8a8a-dc0c37964bc1 
 dependencies:
   pre:
     # Install
-    - git checkout -b $SITE_UUID
+    - git checkout -b $PUUID
   # Install additional test dependencies here (like Casper, Behat, etc).
   override:   
     # Build the documentation 
-    - git remote add pantheon ssh://codeserver.dev.$SITE_UUID@codeserver.dev.$SITE_UUID.drush.in:2222/~/repository.git
+    - git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
     - git config --global user.email "timani@getpantheon.com"
     - git config --global user.name "Pantheon Timani"
     - git push --force pantheon wp-meetup

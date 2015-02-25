@@ -18,6 +18,7 @@ dependencies:
     - git fetch pantheon; 
     - git config --global user.email "timani@getpantheon.com"
     - git config --global user.name "Pantheon Timani"
+    - ls -la
     - git push --force pantheon wp-meetup
 test:
     #

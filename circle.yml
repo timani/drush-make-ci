@@ -9,11 +9,10 @@ machine:
 dependencies:
   pre:
     # Install
-    - git checkout -b wp-meetup
   # Install additional test dependencies here (like Casper, Behat, etc).
   override:   
     # Build the documentation 
-    - git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
+    - git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git 
     - git checkout pantheon wp-meetup # fetch branch from server and checkout locally
     - git config --global user.email "timani@getpantheon.com"
     - git config --global user.name "Pantheon Timani"

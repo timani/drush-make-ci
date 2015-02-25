@@ -21,8 +21,7 @@ dependencies:
     - git push --force pantheon wp-meetup
 test:
     #
-    # This is where the documentation will be built.
-    # or otherwise. Here's a SimpleTest example.  
+    # This is where the documentation will be built. 
   override:
     # Build and deploy documentation
     - echo "WordPress SF Meetup" 

@@ -9,7 +9,7 @@ machine:
 dependencies:
   pre:
     # Install
-    - git checkout -b $PUUID
+    - git checkout -b wp-meetup
   # Install additional test dependencies here (like Casper, Behat, etc).
   override:   
     # Build the documentation 

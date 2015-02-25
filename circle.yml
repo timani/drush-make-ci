@@ -24,7 +24,7 @@ test:
     # or otherwise. Here's a SimpleTest example.  
   override:
     # Build and deploy documentation
-    - echo "WordPress Demo" 
+    - echo "WordPress SF Meetup" 
   # Perform post build operations  
   post:
 # Custom notifications

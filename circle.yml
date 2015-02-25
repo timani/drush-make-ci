@@ -5,8 +5,7 @@ machine:
     version: 5.5.11 
   environment:
     # Set the site UUID here for now -> Private Environment variable
-    site_uuid: f86d7c5d-db0a-45f4-8a8a-dc0c37964bc1
-      
+    site_uuid: f86d7c5d-db0a-45f4-8a8a-dc0c37964bc1 
 dependencies:
   pre:  		    
     # Install 

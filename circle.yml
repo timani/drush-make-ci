@@ -16,7 +16,7 @@ dependencies:
     - gir remote -v
     - git remote set-url origin ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
     - git fetch pantheon wp-meetup; 
-    - git checkout wp-meetup # fetch branch from server and checkout locally
+    - git checkout pantheon/wp-meetup # fetch branch from server and checkout locally
     - git fetch pantheon; 
     - git config --global user.email "timani@getpantheon.com"
     - git config --global user.name "Pantheon Timani"
